@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Danh Sách Sách Cũ</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f1e8;
+}
+
+header{
+    background:#5c4033;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:40px 0;
+}
+
+h1{
+    text-align:center;
+    color:#5c4033;
+    margin-bottom:30px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+th{
+    background:#5c4033;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+}
+
+tr:hover{
+    background:#f8f8f8;
+}
+
+.btn{
+    background:#5c4033;
+    color:white;
+    padding:8px 15px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.btn:hover{
+    background:#3e2b22;
+}
+
+footer{
+    background:#5c4033;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+.search-box{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.search-box input{
+    width:60%;
+    max-width:500px;
+    padding:12px;
+    border:2px solid #5c4033;
+    border-radius:8px;
+    font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🤯SachDoc</div>
+
+    <nav>
+        <a href="index.html">Trang Chủ</a>
+        <a href="gioithieu.html">Giới Thiệu</a>
+        <a href="danhsach.html">Danh Sách</a>
+        <a href="dangban.html">Đăng Bán</a>
+        <a href="lienhe.html">Liên Hệ</a>
+    </nav>
+</header>
+
+<div class="container">
+
+<h1>Danh Sách Sách Đang Bán</h1>
+<div class="search-box">
+    <input type="text" id="searchInput"
+           placeholder="🔍 Nhập tên sách cần tìm..."
+           onkeyup="searchBook()">
+</div>
+<table id="bookTable">
+    <tr>
+        <th>STT</th>
+        <th>Tên Sách</th>
+        <th>Giá</th>
+        <th>Tình Trạng</th>
+        <th>Chi Tiết</th>
+    </tr>
+
+    <tr>
+        <td>1</td>
+        <td>Đắc Nhân Tâm</td>
+        <td>45.000đ</td>
+        <td>90%</td>
+        <td>
+            <a href="dacnhantam.html" class="btn">Xem</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>Trọn Bộ Harry Potter</td>
+        <td>480.000đ</td>
+        <td>80%</td>
+        <td>
+            <a href="harry.html" class="btn">Xem</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>Conan</td>
+        <td>18.000đ</td>
+        <td>95%</td>
+        <td>
+            <a href="conan.html" class="btn">Xem</a>
+        </td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>Doraemon</td>
+        <td>15.000đ</td>
+        <td>75%</td>
+        <td>
+            <a href="doraemon.html" class="btn">Xem</a>
+        </td>
+    </tr>
+    <tr>
+    <td>5</td>
+    <td>Nhà Giả Kim</td>
+    <td>55.000đ</td>
+    <td>90%</td>
+    <td><a href="nhagiakim.html" class="btn">Xem</a></td>
+</tr>
+
+<tr>
+    <td>6</td>
+    <td>Tuổi Trẻ Đáng Giá Bao Nhiêu</td>
+    <td>60.000đ</td>
+    <td>85%</td>
+    <td><a href="tuoitredanggiabaonhieu.html" class="btn">Xem</a></td>
+</tr>
+
+<tr>
+    <td>7</td>
+    <td>Sherlock Holmes Toàn Tập</td>
+    <td>150.000đ</td>
+    <td>75%</td>
+    <td><a href="sherlock.html" class="btn">Xem</a></td>
+</tr>
+<tr>
+    <td>8</td>
+    <td>Không Gia Đình</td>
+    <td>45.000đ</td>
+    <td>80%</td>
+    <td><a href="khonggiadinh.html" class="btn">Xem</a></td>
+</tr>
+
+<tr>
+    <td>9</td>
+    <td>Dế Mèn Phiêu Lưu Ký</td>
+    <td>35.000đ</td>
+    <td>92%</td>
+    <td><a href="#" class="btn">Xem</a></td>
+</tr>
+
+<tr>
+    <td>10</td>
+    <td>Cho Tôi Xin Một Vé Đi Tuổi Thơ</td>
+    <td>40.000đ</td>
+    <td>90%</td>
+    <td><a href="#" class="btn">Xem</a></td>
+</tr>
+<tr>
+    <td>11</td>
+    <td>Cây Cam Ngọt Của Tôi</td>
+    <td>50.000đ</td>
+    <td>88%</td>
+    <td><a href="#" class="btn">Xem</a></td>
+</tr>
+
+
+<tr>
+    <td>12</td>
+    <td>One Piece Tập 1</td>
+    <td>20.000đ</td>
+    <td>95%</td>
+    <td><a href="#" class="btn">Xem</a></td>
+</tr>
+
+</table>
+
+</div>
+
+<footer>
+    <p>© 2026 🤯SachDoc - Danh Sách Sách Cũ</p>
+</footer>
+<script>
+function searchBook() {
+
+    let input = document.getElementById("searchInput");
+    let filter = input.value.toLowerCase();
+
+    let table = document.getElementById("bookTable");
+    let tr = table.getElementsByTagName("tr");
+
+    for(let i = 1; i < tr.length; i++) {
+
+        let td = tr[i].getElementsByTagName("td")[1];
+
+        if(td) {
+            let txtValue = td.textContent || td.innerText;
+
+            if(txtValue.toLowerCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } else {
+                tr[i].style.display = "none";
+            }
+        }
+    }
+}
+</script>
+</body>
+</html>

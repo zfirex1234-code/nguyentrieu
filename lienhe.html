@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liên Hệ - SachDoc</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f1e8;
+}
+
+header{
+    background:#5c4033;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.container{
+    width:80%;
+    max-width:800px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#5c4033;
+    margin-bottom:30px;
+}
+
+.info{
+    line-height:2;
+    font-size:18px;
+}
+
+.contact-form{
+    margin-top:30px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.btn{
+    background:#5c4033;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#3e2b22;
+}
+
+#message{
+    margin-top:15px;
+    color:green;
+    font-weight:bold;
+}
+
+footer{
+    background:#5c4033;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🤯SachDoc</div>
+
+    <nav>
+        <a href="index.html">Trang Chủ</a>
+        <a href="gioithieu.html">Giới Thiệu</a>
+        <a href="sachcu.html">Sách Cũ</a>
+        <a href="dangban.html">Đăng Bán</a>
+        <a href="lienhe.html">Liên Hệ</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h1>Liên Hệ Với Chủ Website</h1>
+
+    <div class="info">
+        <p><strong>👤 Chủ website:</strong> Nguyễn Văn A</p>
+        <p><strong>📞 Số điện thoại:</strong> 0987 654 321</p>
+        <p><strong>📧 Email:</strong> sachdoc@gmail.com</p>
+        <p><strong>📍 Địa chỉ:</strong> Hà Nội, Việt Nam</p>
+    </div>
+
+    <div class="contact-form">
+        <h2>Gửi tin nhắn cho chúng tôi</h2>
+
+        <form id="contactForm">
+
+            <input type="text" placeholder="Họ và tên" required>
+
+            <input type="email" placeholder="Email của bạn" required>
+
+            <textarea rows="5"
+                placeholder="Nhập nội dung cần liên hệ..."
+                required></textarea>
+
+            <button type="submit" class="btn">
+                Gửi Tin Nhắn
+            </button>
+
+        </form>
+
+        <div id="message"></div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 🤯SachDoc - Website Mua Bán Sách Cũ</p>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    document.getElementById("message").innerHTML =
+    "✅ Tin nhắn đã được gửi thành công! Chúng tôi sẽ phản hồi sớm nhất.";
+
+    this.reset();
+});
+</script>
+
+</body>
+</html>

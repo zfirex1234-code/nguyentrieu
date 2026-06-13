@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mua Bán Sách Báo Cũ</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f5f1e8;
+      color:#333;
+    }
+
+    header{
+      background:#5c4033;
+      color:white;
+      padding:15px 50px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      font-size:28px;
+      font-weight:bold;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-size:16px;
+    }
+
+    .hero{
+      height:350px;
+      background:url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200') center/cover;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      text-align:center;
+    }
+
+    .hero h1{
+      font-size:50px;
+      background:rgba(0,0,0,0.5);
+      padding:20px;
+      border-radius:10px;
+    }
+
+    .container{
+      width:90%;
+      margin:auto;
+      padding:40px 0;
+    }
+
+    .section-title{
+      font-size:32px;
+      margin-bottom:30px;
+      text-align:center;
+      color:#5c4033;
+    }
+
+    .books{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .book-card{
+      background:white;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 3px 10px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .book-card:hover{
+      transform:translateY(-5px);
+    }
+
+    .book-card img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+    }
+
+    .book-info{
+      padding:15px;
+    }
+
+    .book-info h3{
+      margin-bottom:10px;
+      color:#5c4033;
+    }
+
+    .price{
+      color:red;
+      font-size:20px;
+      margin:10px 0;
+    }
+
+    .condition{
+      color:green;
+      margin-bottom:15px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#5c4033;
+      color:white;
+      padding:10px 20px;
+      text-decoration:none;
+      border-radius:5px;
+    }
+
+    .btn:hover{
+      background:#3e2b22;
+    }
+
+    footer{
+      background:#5c4033;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:768px){
+      .hero h1{
+        font-size:32px;
+      }
+
+      header{
+        flex-direction:column;
+      }
+
+      nav{
+        margin-top:10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">🤯SachDoc</div>
+<nav>
+  <a href="index.html">Trang Chủ</a>
+  <a href="gioithieu.html">Giới Thiệu</a>
+  <a href="danhsach.html">Danh sách</a>
+  <a href="dangban.html">Đăng Bán</a>
+  <a href="lienhe.html">Liên Hệ</a>
+</nav>
+  </header>
+
+  <section class="hero">
+    <h1>Mua Bán Sách Báo Cũ Giá Rẻ</h1>
+  </section>
+
+  <div class="container">
+
+    <h2 class="section-title">Sách Nổi Bật</h2>
+
+    <div class="books">
+
+      <div class="book-card">
+        <img src="dacnhantam.jpg" alt="book">
+
+        <div class="book-info">
+          <h3>Đắc Nhân Tâm</h3>
+
+          <p class="price">45.000đ</p>
+
+          <p class="condition">Tình trạng: 90%</p>
+
+          <a href="dacnhantam.html" class="btn">Xem Chi Tiết</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="z5453326295511-5b356f047b7e7f0a6eb67d0273fd6afe.webp" alt="book">
+
+        <div class="book-info">
+          <h3> Trọn bộ Harry potter </h3>
+
+          <p class="price">480.000đ</p>
+
+          <p class="condition">Tình trạng: 80%</p>
+
+          <a href="harry.html" class="btn">Xem Chi Tiết</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="download.jpg" alt="book">
+
+        <div class="book-info">
+          <h3>Conan</h3>
+
+          <p class="price">18.000đ</p>
+
+          <p class="condition">Tình trạng: 95%</p>
+
+          <a href="conan.html" class="btn">Xem Chi Tiết</a>
+        </div>
+      </div>
+
+      <div class="book-card">
+        <img src="Doraemon1.jpg" alt="book">
+
+        <div class="book-info">
+          <h3>Doraemon</h3>
+
+          <p class="price">15.000đ</p>
+
+          <p class="condition">Tình trạng: 75%</p>
+
+          <a href="doraemon.html" class="btn">Xem Chi Tiết</a>
+
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 🤯SachDoc - Website Mua Bán Sách Báo Cũ</p>
+  </footer>
+
+  </div>
+</section>
+</body>
+</html>

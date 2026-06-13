@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Đăng Bán Sách - SachDoc</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f1e8;
+}
+
+header{
+    background:#5c4033;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.container{
+    width:70%;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+h1{
+    text-align:center;
+    color:#5c4033;
+    margin-bottom:30px;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+textarea{
+    resize:vertical;
+}
+
+.btn{
+    background:#5c4033;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#3e2b22;
+}
+
+footer{
+    background:#5c4033;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">🤯SachDoc</div>
+
+    <nav>
+        <a href="index.html">Trang Chủ</a>
+        <a href="gioithieu.html">Giới Thiệu</a>
+        <a href="sachcu.html">Sách Cũ</a>
+        <a href="dangban.html">Đăng Bán</a>
+        <a href="lienhe.html">Liên Hệ</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <h1>Đăng Bán Sách Cũ</h1>
+
+  <form id="sellForm">
+
+    <div class="form-group">
+        <label>Họ và tên người bán</label>
+        <input type="text" required>
+    </div>
+
+    <div class="form-group">
+        <label>Số điện thoại</label>
+        <input type="tel" required>
+    </div>
+
+    <div class="form-group">
+        <label>Tên sách</label>
+        <input type="text" required>
+    </div>
+
+    <div class="form-group">
+        <label>Giá bán (VNĐ)</label>
+        <input type="number" required>
+    </div>
+
+    <div class="form-group">
+        <label>Tình trạng sách</label>
+        <select>
+            <option>95% - Như mới</option>
+            <option>90% - Rất tốt</option>
+            <option>80% - Đã qua sử dụng</option>
+            <option>70% - Cũ nhưng đọc tốt</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Hình ảnh sách</label>
+        <input type="file">
+    </div>
+
+    <div class="form-group">
+        <label>Mô tả sách</label>
+        <textarea rows="5"></textarea>
+    </div>
+
+    <button type="submit" class="btn">
+        Đăng Bán Ngay
+    </button>
+
+</form>
+
+<div id="message"></div>
+</div>
+
+<footer>
+    <p>© 2026 🤯SachDoc - Đăng Bán Sách Cũ</p>
+</footer>
+
+</body>
+</html>
